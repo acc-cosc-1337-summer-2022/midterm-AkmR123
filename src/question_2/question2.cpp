@@ -1,6 +1,6 @@
 #include "question2.h"
 
-bool test_config()
-{
-    return true;
+double get_fahrenheit(double c) {
+    return 1.8 * c + 32;
 }
+

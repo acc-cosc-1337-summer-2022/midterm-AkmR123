@@ -43,4 +43,4 @@ CMakeCache.txt
 Makefile
 lib*
 *_exe
-
+/CMakeFiles

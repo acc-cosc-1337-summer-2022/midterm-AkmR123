@@ -2,11 +2,10 @@
 #include "catch.hpp"
 #include "question4.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
-
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE ("Testing die") {
+	Die rolls;
+    srand(time(NULL));
+	for (int i = 0;i < 20; i++){
+	REQUIRE((rolls.generate_random() > 0 && rolls.generate_random() <= 6));
+	}
 }
